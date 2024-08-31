@@ -1,35 +1,52 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     direction: rtl; /* Right-to-left text direction for Persian */
+    background-color: #f8f8f8;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
 header {
     background: #333;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 1rem;
+    display: inline-block;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul .submenu {
@@ -38,6 +55,7 @@ nav ul .submenu {
     background: #444;
     padding: 0.5rem;
     list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul li:hover .submenu {
@@ -54,9 +72,34 @@ nav ul .submenu li a {
     display: block;
 }
 
+/* Hero Section Styles */
+#hero {
+    background: url('https://via.placeholder.com/1600x600') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#hero h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
 /* Main Section Styles */
 main {
-    padding: 1rem;
+    padding: 2rem 0;
+}
+
+/* Reservation Form Styles */
+#reservation-form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -79,39 +122,62 @@ input[type="date"],
 input[type="time"],
 input[type="number"] {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.75rem;
     margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 input[type="submit"] {
     background: #333;
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
 }
 
 input[type="submit"]:hover {
     background: #555;
 }
 
-/* Hidden Class */
-.hidden {
-    display: none;
-}
-
 /* Sandwich Selection Styles */
 #sandwich-selection {
     margin-top: 2rem;
+    text-align: center;
 }
 
-#sandwich-selection img {
-    max-width: 150px;
+.sandwich {
+    display: inline-block;
+    margin: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sandwich label {
+    display: block;
+    text-align: center;
+}
+
+.sandwich img {
+    max-width: 100%;
     height: auto;
-    display: block;
 }
 
-#sandwich-selection label {
-    display: block;
-    margin-bottom: 1rem;
+.sandwich input[type="checkbox"] {
+    margin: 0.5rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
 }
