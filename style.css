@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* Right-to-left text direction for Persian */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    background: #444;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul .submenu li {
+    display: block;
+}
+
+nav ul .submenu li a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+/* Main Section Styles */
+main {
+    padding: 1rem;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #555;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Sandwich Selection Styles */
+#sandwich-selection {
+    margin-top: 2rem;
+}
+
+#sandwich-selection img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+
+#sandwich-selection label {
+    display: block;
+    margin-bottom: 1rem;
+}
